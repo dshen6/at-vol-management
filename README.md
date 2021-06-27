@@ -18,3 +18,6 @@ Beyond the code, a lot of the value in these docs are in the AT schemas themselv
 
 - We also assume the Event/Volunteer/Sign-up Airtable bases described in [Volunteer Management Template](https://airtable.com/tblclabldKtNzF86I/viwcWd0SuT7LDZtD5?blocks=hide).
 - Some of the flows below depend on custom scripts written in Typescript. The code is simple, as the Airtable APIs do the heavy lifting.
+
+## How to navigate this project
+Each workflow lives in it's own folder. Read the README for each one first, and then refer to attached images/scripts as needed.
