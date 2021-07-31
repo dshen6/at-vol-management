@@ -1,8 +1,20 @@
+# Helpful tips for managing Events 
+- Skim over the specific sections
 
+## Roll up all the volunteer info
+- Often, we'll reach out to each of the volunteers who RSVP'd, to make sure they're coming, or to send out a group email.
+    - Highly recommend using Rollup fields to make it easier to grab all this volunteer data
+- For example, let's assume we have a Volunteer Record, with this formula field:
+```
+{Full Name} & IF({Pronouns} = BLANK(), BLANK(), " (" & {Pronouns} & ")") & IF({Phone Number} = BLANK(), BLANK(), " - " & {Phone Number}) & IF({Email} = BLANK(), BLANK(), " - " & {Email})
+```
+-> This will output something like `Chi Rong (She/Her) - (123) 345-5678 - lolol@gmail.com`
+- We can use a rollup field on all Event RSVPs, see `event_volunteer_info_rollup.png`
 
-## Best Practice for Event Start/End Times
+## Start/End Times
 - For Start and End Times, use a `Date` field, and "include a time field"
 - This gives automations multiple ways of parsing the time data
+- see `start_date_with_time_field.png`
 
 ## Auto-generating a Gcal event reminder
 - this generates a gcal link, with the location, time, and body of the calendar event filled out.
