@@ -1,15 +1,16 @@
-# Helpful tips for managing Events 
-- Skim over the specific sections
+# Helpful Tips for Managing Events 
+- Skim over the specific sections, see if it's useful
 
-## Roll up all the volunteer info
+## Use Rollups! especially for volunteer info
 - Often, we'll reach out to each of the volunteers who RSVP'd, to make sure they're coming, or to send out a group email.
-    - Highly recommend using Rollup fields to make it easier to grab all this volunteer data
-- For example, let's assume we have a Volunteer Record, with this formula field:
+    - Highly recommend `Rollup fields` to make it easy to grab all volunteer data for that specific event.
+- For example, let's assume we have a Volunteer Record, with a `FormattedInfoForFieldLead` formula field:
 ```
 {Full Name} & IF({Pronouns} = BLANK(), BLANK(), " (" & {Pronouns} & ")") & IF({Phone Number} = BLANK(), BLANK(), " - " & {Phone Number}) & IF({Email} = BLANK(), BLANK(), " - " & {Email})
 ```
--> This will output something like `Chi Rong (She/Her) - (123) 345-5678 - lolol@gmail.com`
-- We can use a rollup field on all Event RSVPs, see `event_volunteer_info_rollup.png`
+    - This will output something like `Chi Rong (She/Her) - (123) 345-5678 - lolol@gmail.com`
+
+- We can use a rollup field on `FormattedInfoForFieldLead`. See `event_volunteer_info_rollup.png` to see what this looks like.
 
 ## Start/End Times
 - For Start and End Times, use a `Date` field, and "include a time field"
